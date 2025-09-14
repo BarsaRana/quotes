@@ -10,8 +10,8 @@ from sqlalchemy import (
 )
 from sqlalchemy.orm import Session
 
-from backend.db import get_db
-from backend import models
+from db import get_db
+import models
 
 import logging
 

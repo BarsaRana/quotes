@@ -8,12 +8,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from sqlalchemy import text, func
 from sqlalchemy.orm import Session
-from backend import api_routes, report_routes, quotes, admin_routes
-from backend import schemas
-from backend.db import get_db, test_connection
-from backend import models
-from backend import equipment_routes
-from backend import quotes_list_safe
+import api_routes, report_routes, quotes, admin_routes
+import schemas
+from db import get_db, test_connection
+import models
+import equipment_routes
+import quotes_list_safe
 # -----------------------------------------------------------------------------
 # Create app FIRST
 # -----------------------------------------------------------------------------
@@ -94,8 +94,6 @@ def create_client(payload: schemas.ClientIn, db: Session = Depends(get_db)):
 
 # -----------------------------------------------------------------------------
 # Routers (API/calculator, admin, reports, quotes)
-# -----------------------------------------------------------------------------
-from backend import api_routes, report_routes, quotes, admin_routes
 
 # Equipment router (legacy and client routes)
 app.include_router(equipment_routes.router)

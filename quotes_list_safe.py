@@ -5,8 +5,8 @@ from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
 from sqlalchemy import select, desc
 
-from backend.db import get_db
-from backend import models
+from db import get_db
+import models
 
 router = APIRouter(tags=["quotes"])
 

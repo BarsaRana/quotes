@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState, useCallback } from "react";
 import type { CSSProperties, ReactNode, KeyboardEvent as ReactKeyboardEvent } from "react";
 import axios from "axios";
 import jsPDF from "jspdf";
-import { downloadQuotePdf, PdfItem } from "../lib/pdf";
+import { downloadQuotePdf, PdfItem } from "./lib/pdf";
 
 /* ===================== types ===================== */
 type Id = string | number;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { downloadQuotePdf } from "../lib/pdf";
+import { downloadQuotePdf } from "./lib/pdf";
 
 const API_BASE = import.meta.env.VITE_API_BASE || "http://127.0.0.1:8000";
 const fmtMoney = (n: number) => n != null ? n.toLocaleString("en-AU", { style: "currency", currency: "AUD" }) : "—";

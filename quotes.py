@@ -5,9 +5,9 @@ from fastapi import APIRouter, Depends, HTTPException
 from decimal import Decimal
 from sqlalchemy.orm import Session
 from typing import Any
-from .api_routes import QuotePayload, _iso_to_date, _table_columns
-from backend.db import get_db
-from backend import models
+from api_routes import QuotePayload, _iso_to_date, _table_columns
+from db import get_db
+import models
 
 
 router = APIRouter(prefix="/quotes", tags=["quotes"])

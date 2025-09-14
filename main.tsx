@@ -7,11 +7,11 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <Router />
   </React.StrictMode>
 );
-const Calculator = React.lazy(() => import("./pages/Calculator"));
-const Quotes = React.lazy(() => import("./pages/Quotes"));
-const QuotesDetail = React.lazy(() => import("./pages/QuotesDetail")); // <-- ADD THIS LINE
-const Dashboard = React.lazy(() => import("./pages/Dashboard"));
-const QuoteEditPage = React.lazy(() => import("./pages/QuoteEditPage")); 
+const Calculator = React.lazy(() => import("./Calculator"));
+const Quotes = React.lazy(() => import("./Quotes"));
+const QuotesDetail = React.lazy(() => import("./QuotesDetail")); // <-- ADD THIS LINE
+const Dashboard = React.lazy(() => import("./Dashboard"));
+const QuoteEditPage = React.lazy(() => import("./QuoteEditPage")); 
 
 function Router() {
   return (

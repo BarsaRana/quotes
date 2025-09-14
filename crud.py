@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 from sqlalchemy import and_, or_, func
 from typing import List, Optional
-from . import models, schemas
+import models, schemas
 # from .admin import models, schemas
 
 # ----------------------------- MATERIALS -----------------------------
