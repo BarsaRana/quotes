@@ -9,8 +9,8 @@ from pydantic import BaseModel, field_serializer
 from sqlalchemy import func
 from sqlalchemy.orm import Session
 
-from backend.db import get_db
-from backend import models
+from db import get_db
+import models
 
 router = APIRouter(prefix="/quotes/report", tags=["Quotes: Reports"])
 

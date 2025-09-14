@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from typing import List
-from . import crud, models, schemas
-from .db import get_db
+import crud, models, schemas
+from db import get_db
 
 router = APIRouter(tags=["Admin CRUD"])
 

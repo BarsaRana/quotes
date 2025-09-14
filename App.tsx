@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import AppShell from "./AppShell";
-import QuotesPage from "./pages/Quotes";
-import QuotesDetail from "./pages/QuotesDetail";
-import QuoteEditPage from "./pages/QuoteEditPage";
+import QuotesPage from "./Quotes";
+import QuotesDetail from "./QuotesDetail";
+import QuoteEditPage from "./QuoteEditPage";
 
 function App() {
   return (
